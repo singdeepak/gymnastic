@@ -1,0 +1,322 @@
+@import url('reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+
+:root{
+    --primary-color: #44345;
+    --secondary-color: #5345345;
+    --primary-bg: #5453454;
+    --secondary-bg: #234345;
+    --white: #f8f8f8;
+    --black: #000;
+    --red: #e8374d;
+    --secondary-black: #353535;
+}
+
+
+/* HEADER-SECTION */
+#header{
+    color: #ddd;
+    display: flex;
+    padding: 1.5rem;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--black);
+}
+
+
+#logo{
+    font-size: 2rem;
+    font-weight: 800;
+    padding: 0 0.3rem;
+    border-left: 1px solid var(--red);
+    border-right: 1px solid var(--red);
+    letter-spacing: 0.2rem;
+}
+
+
+.navbar .navbox .nav-link{
+    padding: 0px 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: inline-block;
+    color: var(--white);
+    transition: all 0.5s ease;
+}
+
+
+.navbar .navbox .nav-link:hover{
+    color: var(--red);
+}
+
+
+.social-links-wrapper .fa-brands{
+    margin: 0 0.3rem;
+    font-size: 1.5rem;
+    color: var(--red);
+    cursor: pointer;
+}
+
+
+/* SLIDER-SECTION */
+.slider-section{
+    position: relative;
+}
+
+
+.arrow{
+    top: 45%;
+    color: var(--white);
+    font-size: 3rem;
+    padding: 0 2rem;
+    cursor: pointer;
+    position: absolute;
+}
+
+.next{
+    right: 0;
+}
+
+.slide{
+    width: 100%;
+    height: 85vh;
+    display: none;
+}
+
+
+.slide-img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+/* QUOTE-SECTION */
+.quote{
+    padding: 1rem 0;
+    text-align: center;
+    background-color: var(--red);
+}
+
+.quote-text{
+    margin: 3rem;
+    font-size: 2rem;
+    color: var(--white);
+}
+
+
+.author{
+    color: yellow;
+    font-family: cursive;
+    font-size: 1.5rem;
+    font-family: 'Cedarville Cursive', cursive;
+}
+
+
+/* CARD-SECTION */
+.card-section{
+    padding: 4rem 3rem;
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--black);
+}
+
+
+.item{
+    color: var(--white);
+    text-align: center;
+    flex-basis: 23%;
+    overflow: hidden;
+    background-color: var(--secondary-black);
+}
+
+
+.card-img{
+    width: 100%;
+    height: auto;
+    transition: transform 1s ease;
+}
+
+
+.card-img:hover{
+    transform: scale(1.2) rotate(6deg);
+}
+
+
+
+.card-title{
+    margin: 0.8rem 0;
+    font-size: 2rem;
+}
+
+
+.card-title::after{
+    display: block;
+    content: '';
+    width: 15vw;
+    height: 1px;
+    margin: 1rem auto;
+    background-color: var(--black);
+}
+
+.card-text{
+    margin: 1rem;
+    font-size: 1.2rem;
+    text-transform: justify;
+}
+
+.card-btn{
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    margin: 2rem 0;
+    text-transform: uppercase;
+    background-color: var(--red);
+}
+
+
+
+/* AMENITIES-SECTION */
+.amenities{
+    text-align: center;
+    padding: 4rem 0;
+    background-color: var(--white);
+}
+
+
+
+.amenities-title{
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    color: var(--red);
+    text-transform: capitalize;
+}
+
+
+.amenities-text{
+    margin: 2rem 0;
+    font-size: 1rem;
+}
+
+
+
+.amenities-btn-group button{
+    outline: none;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    color: var(--white);
+    cursor: pointer;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    background-color: var(--red);
+}
+
+
+.amenities-imag{
+    width: 100%;
+    max-width: 20rem;
+    height: auto;
+    display: inline;
+    margin: 0.5rem;
+}
+
+
+
+.active{
+    background-color: var(--black) !important;
+}
+
+
+/* TRAINER-SECTION */
+.trainer{
+    color: var(--white);
+    text-align: center;
+    padding: 4rem 0;
+    background-color: var(--black);
+}
+
+
+.trainer-title{
+    text-transform: uppercase;
+    margin-bottom: 0.7rem;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+
+.trainer-text{
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+
+.trainer-btn{
+    outline: none;
+    border: none;
+    padding: 1rem 2rem;
+    color: var(--white);
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.5s ease;
+    border-radius: 0.2rem;
+    text-transform: uppercase;
+    background-color: var(--red);
+}
+
+
+.trainer-btn:hover{
+    cursor: pointer;
+    background-color: var(--secondary-black);
+}
+
+
+
+/* CONTACT-SECTION */
+.contact{
+    text-align: center;
+    padding: 5rem;
+    background-color: var(--secondary-black);
+}
+
+
+.contact-title{
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: 600;
+    color: var(--white);
+    padding: 2rem 0;
+    text-transform: capitalize;
+}
+
+
+.contact-details{
+    display: flex;
+    line-height: 5rem;
+    align-items: start;
+    flex-direction: column;
+}
+
+.contact-details span{
+    padding: 2rem;
+    color: var(--white);
+    font-size: 1.2rem;
+}
+
+
+/* FOOTER-SECTION */
+.footer{
+    display: flex;
+    padding: 2rem;
+    background-color: var(--red);
+}
+
+.footer .text{
+    margin: auto;
+    color: var(--white);
+    font-size: 1.1rem;
+}
